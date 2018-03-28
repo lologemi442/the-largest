@@ -1,0 +1,18 @@
+#include <iostream.h>
+#include <conio.h>
+void main ()
+{
+float a , b , c , max ;
+char ch;
+do
+ {
+cout << "\nEnter three numbers: \n" ;
+cin >> a >> b >> c;
+max = (a > b ) ? ((a > c) ? a:c ): ((b > c) ? b:c );
+cout << max << " is the grater.\n" ;
+cout << "\nagain (y/n)?";
+cin >> ch;
+ }
+ while (ch != 'n');
+getch ();
+}
